@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display grid</title>
+  <style>
+    .container {
+      padding: 15px;
+      background-color: steelblue;
+      display: grid;
+      grid-template-columns: 250px 250px 250px;
+      grid-template-rows: 150px 150px 150px;
+      grid-template-areas: 
+      "number1 number1 number1" 
+      "number2 number3 number3" 
+      "number2 number3 number3";
+      gap: 20px;
+    }
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      background-color: red;
+      font-size: 20px;
+    }
+    .area1 {
+      grid-area: number1;
+    }
+    .area2 {
+      grid-area: number2;
+    }
+    .area3 {
+      grid-area: number3;
+    }
+    .area4 {
+      grid-area: number4;
+    }
+    .area5 {
+      grid-area: number5;
+    }
+    .area6 {
+      grid-area: number6;
+    }
+    .area7 {
+      grid-area: number7;
+    }
+    .area8 {
+      grid-area: number8;
+    }
+    .area9 {
+      grid-area: number9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item area1">1</div>
+    <div class="item area2">2</div>
+    <div class="item area3">3</div>
+    <div class="item area4">4</div>
+    <div class="item area5">5</div>
+    <div class="item area6">6</div>
+    <div class="item area7">7</div>
+    <div class="item area8">8</div>
+    <div class="item area9">9</div>
+  </div>
+</body>
+</html>

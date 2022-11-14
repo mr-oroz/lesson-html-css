@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .search {
+        position: relative;
+        width: 500px;
+      }
+      .logo {
+        width: 300px;
+      }
+      .searchIcon,
+      .voiceIcon,
+      input {
+        position: absolute;
+      }
+      .searchIcon,
+      .voiceIcon {
+        width: 20px;
+        height: 20px;
+        top: 105px;
+      }
+      .searchIcon {
+        left: 5px;
+      }
+      .voiceIcon {
+        left: 520px;
+      }
+      input {
+        outline: none;
+        border-radius: 10px;
+        padding: 5px 20px;
+        width: 100%;
+        top: 100px;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="search">
+        <img
+          class="logo"
+          src="https://www.pngmart.com/files/16/official-Google-Logo-PNG-Clipart.png"
+          alt=""
+        />
+        <input placeholder="поиск..." type="text" />
+        <img
+          class="searchIcon"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/500px-Search_Icon.svg.png"
+          alt=""
+        />
+        <img
+          class="voiceIcon"
+          src="https://freepngimg.com/thumb/microphone/70666-voice-microphone-google-search-logo-png-file-hd.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>

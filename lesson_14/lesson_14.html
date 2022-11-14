@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/d740c34394.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      @font-face {
+        font-family: "Balqis";
+        src: url("./Balqis.ttf");
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      header {
+        background-image: url("./capadocia.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1080px;
+        position: relative;
+      }
+      .title {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .title h1 {
+        font-family: "Balqis";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 250px;
+        line-height: 334px;
+      }
+      .title span {
+        position: absolute;
+        right: 0;
+        bottom: 30%;
+        font-size: 60px;
+        font-style: italic;
+      }
+      .color {
+        color: red;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .menu {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+      }
+      .menu li {
+        margin-right: 20px;
+      }
+      .title-section h2 {
+        font-family: "Balqis";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 128px;
+        color: #e2ab3f;
+      }
+      .content {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        height: 700px;
+      }
+      .image img {
+        position: absolute;
+        left: -280px;
+      }
+      .description {
+        width: 500px;
+        margin-left: 55px;
+      }
+      .description2 {
+        width: 500px;
+      }
+      .image2 img {
+        position: absolute;
+        right: -440px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <ul class="menu">
+            <li><a href="">Маршрут</a></li>
+            <li><a href="">Отель</a></li>
+            <li><a href="">Стоимость</a></li>
+          </ul>
+          <div class="phone">
+            <i class="fa-sharp fa-solid fa-phone-volume"></i>
+            <a href="">+38(066)555-777-6</a>
+          </div>
+        </div>
+
+        <div class="title">
+          <h1>Cappadocia</h1>
+          <span class="text">Эклслюзивный тур</span>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="title-section">
+          <h2>Fairy tail</h2>
+        </div>
+        <div class="content">
+          <div class="image">
+            <img src="./Rectangle 19.jpg" alt="" />
+          </div>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate omnis ducimus quia ipsam dolore, cumque, laborum
+              possimus nulla culpa error odio optio eos! Optio placeat assumenda
+              excepturi at minus alias distinctio sed ipsa, facere, iste eum
+              totam dignissimos consequatur minima numquam sit quo non deleniti
+              possimus. Omnis tempore esse pariatur nesciunt amet soluta
+              incidunt repudiandae aut, enim minus id possimus necessitatibus,
+              blanditiis porro, corrupti iure quam illo aliquam! Iste esse,
+              ullam itaque quo suscipit numquam corrupti architecto deserunt
+              provident quae fuga eaque, quas corporis doloribus quos id vitae!
+              Nisi unde vel cupiditate quas recusandae tenetur ea voluptatem
+              beatae deleniti repudiandae.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="title-section">
+          <h2>Our trip</h2>
+          <div class="content">
+            <div class="description2">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Cupiditate omnis ducimus quia ipsam dolore, cumque, laborum
+                possimus nulla culpa error odio optio eos! Optio placeat assumenda
+                excepturi at minus alias distinctio sed ipsa, facere, iste eum
+                totam dignissimos consequatur minima numquam sit quo non deleniti
+                possimus. Omnis tempore esse pariatur nesciunt amet soluta
+                incidunt repudiandae aut, enim minus id possimus necessitatibus,
+                blanditiis porro, corrupti iure quam illo aliquam! Iste esse,
+                ullam itaque quo suscipit numquam corrupti architecto deserunt
+                provident quae fuga eaque, quas corporis doloribus quos id vitae!
+                Nisi unde vel cupiditate quas recusandae tenetur ea voluptatem
+                beatae deleniti repudiandae.
+              </p>
+            </div>
+            <div class="image2">
+              <img src="./Rectangle 22.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="title-section">
+          <h2>Hotel</h2>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="title-section">
+          <h2>Price</h2>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </body>
+</html>

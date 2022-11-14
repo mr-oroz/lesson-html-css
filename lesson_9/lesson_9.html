@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    .container {
+      background-color: skyblue;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .item {
+      width: 100px;
+      flex-grow: 1;
+      height: 100px;
+      background-color: red;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+      color: white;
+    }
+    .order{
+      /* order: 1; */
+      flex-grow: 3;
+    }
+    .border {
+      border: 1px solid black;
+    }
+    .header, .center, .footer {
+      width: 1000px;
+    }
+    .center{
+      height: 700px;
+      display: flex;
+    }
+    .header,  .footer {
+      height: 600px;
+    }
+    .sidebar{
+      flex-grow: 3;
+      width: 200px;
+      padding: 5px;
+    }
+    .content{
+      flex-grow: 5;
+      width: 300px;
+      padding: 5px;
+    }
+    p{
+      text-align: center;
+    }
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- <div class="container">
+    <div class="item order">1
+      menu
+    </div>
+    <div class="item ">2
+      posts
+    </div>
+    <div class="item order">3
+      settings
+    </div>
+    <!-- <div class="item">4</div> -->
+  </div> -->
+  <div class="container">
+    <div class="border header"></div>
+    <div class="border center">
+      <div class="border content">
+        <img src="https://media.npr.org/assets/img/2021/08/11/gettyimages-1279899488_wide-f3860ceb0ef19643c335cb34df3fa1de166e2761-s1100-c50.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad iste dolor ipsam corrupti excepturi veritatis alias aliquid perferendis odit aspernatur, consequuntur ratione deserunt sint corporis, nobis voluptates. Laborum perferendis voluptas possimus est, necessitatibus molestias veritatis harum provident placeat quis magnam? Quis quas dolores consequuntur inventore libero fugit ut asperiores porro voluptates perferendis consectetur amet cupiditate alias, architecto doloremque blanditiis pariatur dicta voluptatem fugiat! Eum, quo. Perspiciatis dolore deleniti repudiandae fugiat iusto aperiam numquam enim consequatur expedita quasi reprehenderit, veritatis sed impedit ea obcaecati voluptatibus ad quidem dolorem. Eum debitis maiores explicabo ea voluptates iure fugit sapiente, voluptatum quas labore.</p>
+      </div>
+      <div class="border sidebar">
+        <img src="https://media.npr.org/assets/img/2021/08/11/gettyimages-1279899488_wide-f3860ceb0ef19643c335cb34df3fa1de166e2761-s1100-c50.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad iste dolor ipsam corrupti excepturi veritatis alias aliquid perferendis odit aspernatur, consequuntur ratione deserunt sint corporis, nobis voluptates. Laborum perferendis voluptas possimus est, necessitatibus molestias veritatis harum provident placeat quis magnam? Quis quas dolores consequuntur inventore libero fugit ut asperiores porro voluptates perferendis consectetur amet cupiditate alias, architecto doloremque blanditiis pariatur dicta voluptatem fugiat! Eum, quo. Perspiciatis dolore deleniti repudiandae fugiat iusto aperiam numquam enim consequatur expedita quasi reprehenderit, veritatis sed impedit ea obcaecati voluptatibus ad quidem dolorem. Eum debitis maiores explicabo ea voluptates iure fugit sapiente, voluptatum quas labore.</p>
+      </div>
+      <div class="border sidebar">
+        <img src="https://media.npr.org/assets/img/2021/08/11/gettyimages-1279899488_wide-f3860ceb0ef19643c335cb34df3fa1de166e2761-s1100-c50.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad iste dolor ipsam corrupti excepturi veritatis alias aliquid perferendis odit aspernatur, consequuntur ratione deserunt sint corporis, nobis voluptates. Laborum perferendis voluptas possimus est, necessitatibus molestias veritatis harum provident placeat quis magnam? Quis quas dolores consequuntur inventore libero fugit ut asperiores porro voluptates perferendis consectetur amet cupiditate alias, architecto doloremque blanditiis pariatur dicta voluptatem fugiat! Eum, quo. Perspiciatis dolore deleniti repudiandae fugiat iusto aperiam numquam enim consequatur expedita quasi reprehenderit, veritatis sed impedit ea obcaecati voluptatibus ad quidem dolorem. Eum debitis maiores explicabo ea voluptates iure fugit sapiente, voluptatum quas labore.</p>
+      </div>
+    </div>
+    <div class="border footer"></div>
+  </div>
+</body>
+</html>

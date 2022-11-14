@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .block {
+        background-color: red;
+        width: 100px;
+        height: 25px;
+        cursor: pointer;
+        position: relative;
+      }
+      h2 {
+        color: #fff;
+        position: absolute;
+        left: 0;
+        top: -200px;
+      }
+      .block:hover h2 {
+        top: -10px;
+      }
+      .box {
+        width: 100px;
+        height: 50px;
+        background-color: green;
+        margin-top: 10px;
+        position: absolute;
+        left: 8px;
+        top: 40px;
+        animation-name: changePosition;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+      }
+      @keyframes my-animation {
+        0%,
+        100% {
+          width: 100px;
+          height: 50px;
+        }
+        50% {
+          width: 500px;
+          height: 300px;
+        }
+        70% {
+          background-color: red;
+        }
+        80% {
+          border-radius: 50%;
+        }
+      }
+      @keyframes changePosition {
+        0% {
+          left: 8px;
+        }
+        50% {
+          left: 200px;
+        }
+        100% {
+          left: 8px;
+        }
+      }
+      .container {
+        border: 2px solid black;
+        width: 300px;
+        height: 300px;
+        margin-top: 70px;
+        position: relative;
+      }
+      .item {
+        width: 40px;
+        height: 40px;
+        background-color: aqua;
+        position: absolute;
+        animation: circleAnimation2 2s infinite;
+      }
+      @keyframes circleAnimation {
+        0%,
+        100% {
+          top: 0;
+          left: 0;
+        }
+        25% {
+          left: 260px;
+          top: 0;
+        }
+        50% {
+          top: 260px;
+          left: 260px;
+        }
+        75% {
+          left: 0;
+          top: 260px;
+        }
+      }
+      @keyframes circleAnimation2 {
+        0%,
+        100% {
+          top: 0;
+          left: 0;
+        }
+        50% {
+          left: 260px;
+          top: 260px;
+        }
+      }
+      .parent {
+        width: 50px;
+        height: 20px;
+        background: red;
+        margin: 20px;
+        position: absolute;
+        left: 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+      }
+      @keyframes position {
+        0% {
+          left: 10px;
+        }
+        100% {
+          left: 200px;
+        }
+      }
+      .parent1,
+      .parent2,
+      .parent3,
+      .parent4,
+      .parent5 {
+        animation-name: position;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+      }
+      .parent1 {
+        top: 30px;
+        animation-timing-function: linear;
+      }
+      .parent2 {
+        top: 60px;
+        animation-timing-function: ease-in;
+      }
+      .parent3 {
+        top: 90px;
+        animation-timing-function: ease;
+      }
+      .parent4 {
+        top: 120px;
+        animation-timing-function: ease-in-out;
+      }
+      .parent5 {
+        top: 150px;
+        animation-timing-function: ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="block">
+    <h2>hello</h2>
+  </div>
+
+  <div class="box"></div>
+
+  <div class="container">
+    <div class="item"></div>
+  </div> -->
+    <div class="parent parent1">linear</div>
+    <div class="parent parent2">ease-in</div>
+    <div class="parent parent3">ease</div>
+    <div class="parent parent4">ease-in-out</div>
+    <div class="parent parent5">ease-out</div>
+  </body>
+</html>

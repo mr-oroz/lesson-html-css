@@ -1,0 +1,89 @@
+/* input {
+  outline: none;
+  padding: 15px;
+  background-color: aqua;
+}
+
+button {
+  padding: 5px 14px;
+  background-color: red;
+} */
+
+.block {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  /* overflow: scroll; */
+  overflow-y: hidden;
+  position: relative;
+}
+/* псевдоэлементы  before after */
+
+p::before{
+  content: 'Before ';
+  color: green;
+  font-size: 18px;
+}
+p::after{
+  content: ' After';
+  color: red;
+  font-size: 18px;
+}
+
+.block:after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 100%;
+  left: 0;
+  background-color: black;
+}
+
+.box {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  transition: 1s;
+  cursor: pointer;
+}
+.box:hover{
+  background-color: blue;
+}
+
+span {
+  font-size: 20px;
+  transition: 1s;
+}
+.box:hover span{
+  color: white;
+}
+
+
+h1 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+h1::before, h1:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: 1s;
+}
+h1::before{
+  left: 0;
+  top: -5px;
+}
+h1::after{
+  right: 0;
+  bottom: -5px;
+}
+h1:hover:after, h1:hover::before {
+  width: 100%;
+}
+
+

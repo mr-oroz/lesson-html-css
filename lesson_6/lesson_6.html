@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .login{
+      border: none;
+      outline: none;
+      /* outline-style: solid; */
+      border-bottom: 1px solid black;
+      padding: 5px 10px;
+    }
+    button {
+      background-color: red;
+      outline: none;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      padding: 4px 15px;
+      box-shadow: 0 0 2px black;
+      cursor: pointer;
+      transition: 1s;
+    }
+    button:hover{
+      background-color: blue;
+    }
+    button:active{
+      background-color: green;
+    }
+    input {
+      border-radius: 10px;
+    }
+    .login, .login::placeholder {
+      color: blue;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <input class="login" placeholder="Логин" type="text">
+  <input placeholder="Номер телефона" type="number">
+  <input placeholder="Пароль..." type="password">
+  <input placeholder="Почта" type="email">
+  <input type="submit" value="регистрация">
+  <input checked type="checkbox">
+  <label for="">с картой </label>
+  <input name="radio" type="radio">
+  <label for="">наличным</label>
+  <input name="radio" type="radio">
+  <label for="">онлайн оплата</label>
+  <input name="check" type="radio">
+  <input type="file">
+  <button>оплатить</button>
+</body>
+</html>
